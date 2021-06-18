@@ -1,0 +1,8 @@
+.customStyle tbody tr:hover {
+  background-color: lightgrey;
+}
+
+.customStyle tr:hover {
+    cursor: pointer;
+    background-color: white;
+}

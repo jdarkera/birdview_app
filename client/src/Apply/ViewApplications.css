@@ -1,0 +1,11 @@
+.customStyle tbody tr:hover {
+  background-color: lightgrey;
+}
+
+.table tbody tr td a {
+  text-decoration: underline;
+}
+
+.table tbody tr td a:hover {
+  color: blue;
+}

@@ -1,0 +1,19 @@
+.companyInfo:focus {
+    outline: 0;
+}
+
+#back-to-job {
+    margin-top: 0%;
+}
+
+#add-review {
+    margin-top: 0%;
+}
+#review-list {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+#edit-company {
+    margin-top: 0;
+}

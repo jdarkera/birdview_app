@@ -1,0 +1,37 @@
+.myForm{
+    width: 300px;
+    padding-top: 40px;
+}
+
+button{
+    margin-top: 3%;
+    display: block;
+}
+
+.form-sub-group {
+    margin-left: 10%
+}
+.container{
+    /* border: 1px solid black; */
+}
+
+.btn{
+    margin-right: 10px;
+}
+
+.form-control {
+  margin-top:-5px;
+  width: auto;
+}
+
+label {
+  margin-top:10px;
+}
+
+textarea {
+    width: auto;
+}
+
+#errorMessage {
+    color: red;
+}

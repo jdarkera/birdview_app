@@ -1,0 +1,48 @@
+
+.myLoginForm{
+    position: relative;
+    width: auto;
+    height: auto;
+    /* background-color: rgba(34, 34, 34, 0.9); */
+    color: white;
+    /* border: 1px solid white; */
+    text-align: center;
+    margin-left: 36%;
+    margin-right: 38%;
+    display: grid;
+    margin-top: 20%;
+}
+
+.loginform-control{
+    width: 100%;
+    display: inline-block;
+    justify-self: center;
+    background-color: rgba(251, 255, 251, 0.822);
+    text-align: center;
+}
+
+.loginform-label{
+    padding-right: 5%;
+}
+
+.loginform-btn{
+    float: right;
+}
+
+
+#myVideo{
+    min-width: 100%;
+    max-height: auto;
+    min-height: 100%;
+    max-width: 100%;
+    left: 0;
+    margin-left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1000;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    object-fit: cover;
+}
+

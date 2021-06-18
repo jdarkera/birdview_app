@@ -1,0 +1,47 @@
+.myRegisterForm {
+  position: relative;
+  width: auto;
+  height: auto;
+  color: white;
+  /* border: 1px solid white; */
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flexbox;
+  margin-top: 16%;
+  margin-bottom: 10%;
+}
+
+.registerform-group{
+  /* border: 1px solid red; */
+  width: auto;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.registerform-label {
+  /* border: 1px solid yellow; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.registerform-control {
+  /* border: 1px solid orange; */
+  background-color: rgba(251, 255, 251, 0.822);
+  text-align: center;
+}
+
+.registerform-btn{
+    display: inline-block;
+    width: 100%;
+    /* float: right; */
+}
+
+@media only screen and (max-width: 600px) {
+  .myRegisterForm {
+    margin-left: 28%;
+    /* border: 1px solid yellow; */
+    text-align: center;
+  }
+  .registerform-control{
+  }
+}

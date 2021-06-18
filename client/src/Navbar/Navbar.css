@@ -1,0 +1,40 @@
+
+
+.logo{
+  /* border: 1px solid red; */
+  /* text-align: left; */
+  width: auto;
+  padding-left: 5%;
+}
+
+.navbar-nav{
+  /* border: 1px solid yellow; */
+  width: 100%;
+}
+
+.options{
+  /* border: 1px solid goldenrod; */
+  width: 100%;
+}
+
+.options li{
+  /* border: 1px solid yellow; */
+  text-align: center;
+  width: auto;
+  float: right;
+  padding-right: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .options li{
+    float: none;
+    /* border: 1px solid yellow; */
+    text-align: center;
+    padding-left: 15%;
+  }
+  .logo{
+    text-align: center;
+    padding: 0;
+    padding-left: 8%;
+  }
+}
