@@ -97,6 +97,7 @@ export default class LoginForm extends Component {
         {this.props.showLogin && (
           <form className="myLoginForm myForm">
             <div className="loginform-group form-group">
+              <h3 className="login-title">Login</h3>
               <label className= "loginform-label" htmlFor="Username">Username</label>
               <input
                 type="text"
@@ -122,7 +123,7 @@ export default class LoginForm extends Component {
               className="btn btn-success loginform-btn"
               onClick={this.handleLogin}
             >
-              Login
+              Sign In
             </button>
             <button
               type="button"

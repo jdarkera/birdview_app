@@ -49,19 +49,19 @@ export default class Recruiter extends Component {
                   <nav className="navbar navbar-light navbar-expand-sm justify-content-end">
                   <ul className="navbar-nav">
                       <li className="nav-item">
-                          <button className="nav-link userNav edit" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
+                          <button className="nav-link userNav edit bg-warning" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.CREATE_JOB)}>Post a Job</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.CREATE_JOB)}>Post a Job</button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Posted Jobs</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Posted Jobs</button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.COMPANY_INFO)}>View Company</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.COMPANY_INFO)}>View Company</button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.VIEW_APPLICANTS)}>View Applicants</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_APPLICANTS)}>View Applicants</button>
                       </li>
                       
                   </ul>

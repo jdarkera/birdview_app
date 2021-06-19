@@ -25,12 +25,17 @@ export default class Navbar extends Component {
   render() {
     return (
         <nav className="navbar navbar-dark bg-dark navbar-expand-sm fixed-top justify-content-end">
+        {/* // <nav className="navbar navbar-light bg-warning navbar-expand-sm fixed-top justify-content-end"> */}
+            <a href="#" class="navbar-brand">
+            <img src="new6irdviewLogo.png" height="28" alt="6irdview"></img>
+            </a>
           <ul className="navbar-nav">
               <li className="nav-item logo">
+             
                 <Link 
                   to= "/" 
                   className="nav-link"
-                  onClick={this.onLoginClick}> myBetterExperience</Link>
+                  onClick={this.onLoginClick}></Link>
               </li>
 
             {this.props.showUpdateNavBar && (
@@ -41,7 +46,7 @@ export default class Navbar extends Component {
                     className="nav-link"
                     onClick={this.onLogOutClick}
                   >
-                    Log-out
+                    SIGN OUT
                   </Link>
                 </li>
                 </span>

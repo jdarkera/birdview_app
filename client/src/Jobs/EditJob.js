@@ -97,7 +97,7 @@ export default class EditJob extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Edit Job posting</h1>
+                <h1>Edit Freelance Job posting</h1>
                 <h5 id="jobPostingMessage">{this.state.jobPostingMessage}</h5>
                 <form className="myForm">
                     <div className="form-group">

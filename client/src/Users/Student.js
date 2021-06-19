@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import React from 'react';
 import UserProfile from "./UserProfile";
 import ViewJobs from "../Jobs/ViewJobs";
 import ViewJobsMap from "../Jobs/ViewJobsMap";
@@ -7,6 +6,7 @@ import ViewApplications from "../Apply/ViewApplications";
 import Job from "../Jobs/Job";
 import './User.css';
 import { Tabs, UserType } from "../Constants.js";
+
 
 export default class Student extends Component {
     constructor(props){
@@ -46,20 +46,20 @@ export default class Student extends Component {
         return (
             <React.Fragment>
                 <nav className="navbar navbar-light navbar-expand-sm justify-content-end">
-                <ul className="navbar-nav">
+                <ul className="navbar-nav justify-content-center">
                     <li className="nav-item">
-                        <button className="nav-link userNav edit" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
+                        <button className="nav-link userNav edit bg-warning" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
                     </li>
                     <li className="nav-item">
-                        <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Jobs</button>
-                    </li>
-
-                    <li className="nav-item">
-                        <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS_MAP)}>View Jobs Map</button>
+                        <button className="nav-link userNav bg-warning " onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Jobs</button>
                     </li>
 
                     <li className="nav-item">
-                        <button className="nav-link userNav" onClick={() => this.handleTabChange(Tabs.VIEW_APPLICATIONS)}>My Applications</button>
+                        <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS_MAP)}>View Jobs Map</button>
+                    </li>
+
+                    <li className="nav-item">
+                        <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_APPLICATIONS)}>My Applications</button>
                     </li>
                 </ul>
                 </nav>

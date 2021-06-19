@@ -162,11 +162,11 @@ export default class ViewJobs extends Component {
       return (
         <div className="container">
           <h1>Active Jobs</h1><br />
-          {this.props.companyName && <p>You have not posted any jobs yet!</p>}
+          {this.props.companyName && <p>You have not posted any freelance jobs yet!</p>}
           {! this.props.companyName && <p>No active listings to show. Try again later!</p>}
         </div>
       );
-    }
+    }0--
     return (
       <div className="container">
       <h1>Active Jobs</h1>

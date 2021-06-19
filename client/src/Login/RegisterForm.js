@@ -258,7 +258,9 @@ export default class RegisterForm extends Component {
       <React.Fragment>
         <div className="container">
           <form className="myRegisterForm">
+          <h3 className="login-title1">Registration</h3>
             <div className="form-group  registerform-group row">
+            
               <label className="registerform-label col" htmlFor="Username">Username (min. 4 characters)</label>
               <input
                 type="text"

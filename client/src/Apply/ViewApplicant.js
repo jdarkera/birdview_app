@@ -186,7 +186,7 @@ export default class ViewApplicant extends Component {
               {! this.props.jobTitle &&
               <th>
               <select className="custom-select mr-sm-2" onChange={this.applyJobFilter}>
-                <option name="job" value="all" defaultValue>All Jobs</option>
+                <option name="job" value="all" defaultValue>All Freelance Jobs</option>
                 {
                   this.state.jobs.map((job, i) => {
                     return <option name="job" value={job} key={i}>{job}</option>

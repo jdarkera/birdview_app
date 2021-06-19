@@ -126,7 +126,7 @@ export default class CompanyInfo extends Component {
                     {this.state.errorMessage === "" && ! this.state.companyEdit &&  (
                     <div>
                     <nav className="navbar navbar-light navbar-expand-sm">
-                    {! this.props.source === "recruiter" && <button id="back-to-job" className="btn btn-primary" onClick={() => this.goBack()}>Back to Job posting</button>}
+                    {! this.props.source === "recruiter" && <button id="back-to-job" className="btn btn-primary" onClick={() => this.goBack()}>Back to Freelance Job posting</button>}
                     {this.props.source === "recruiter" && <button id="edit-company" className="btn btn-primary" onClick={() => this.editCompany()}>Edit Company</button>}
                     <ul className="nav nav-tabs ml-auto">
                     <li className="nav-item">
