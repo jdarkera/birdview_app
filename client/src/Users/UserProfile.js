@@ -101,25 +101,29 @@ export default class UserProfile extends Component {
 
     render() {
         const user = this.props.user;
-
         return (
             <React.Fragment>
                 <div className="container">
                 <h1>Edit Profile</h1>
                 <h5 id="editProfileMessage">{this.state.editProfileMessage}</h5>
+                {/* <h3>Please complete your profile. More information about you helps us find opportunities that matches your interests.</h3> */}
                 <form className="myForm">
                     <div className="form-group">
-                        <label htmlFor="Username">Username (min. 4 characters)</label>
+                        <label htmlFor="Username">Username (min. 4 characters) <span class="required">*</span></label>
                         <input type="text" placeholder={user.userName} className="form-control" id="userName" value={this.state.userName} onChange={this.handleUserNameChange} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="Password">Old Password</label>
+                        <label htmlFor="Password">Old Password <span class="required">*</span> </label>
                         <input type="password" className="form-control" id="oldPassword" value={this.state.userOldPassword} onChange={this.handleOldUserPasswordChange}/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="Password">New Password</label>
+                        <label htmlFor="Password">New Password <span class="required">*</span></label>
                         <input type="password" className="form-control" id="newPassword" value={this.state.userNewPassword} onChange={this.handleNewUserPasswordChange}/>
                     </div>
+                    {/* <div className="form-group">
+                        <label htmlFor="Linkdln">Linkdln Profile</label>
+                        <input type="text" className="form-control" id="Linkdln"/>
+                    </div> */}
                     <button type="button" className="btn btn-primary" onClick={this.handleEditProfile}>Save changes</button>
                     <button type="button" className="btn btn-primary" onClick={this.handleCancel}>Cancel</button>
                 </form>

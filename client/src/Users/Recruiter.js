@@ -52,10 +52,10 @@ export default class Recruiter extends Component {
                           <button className="nav-link userNav edit bg-warning" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.CREATE_JOB)}>Post a Job</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.CREATE_JOB)}>Post an Opportunity </button>
                       </li>
                       <li className="nav-item">
-                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Posted Jobs</button>
+                          <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Listings</button>
                       </li>
                       <li className="nav-item">
                           <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.COMPANY_INFO)}>View Company</button>

@@ -1,0 +1,32 @@
+.application {
+    padding: 30px 15px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-style: outset;
+    text-align: center;
+  
+  }
+/* input.upload {
+    display: block;
+    text-align: center;
+
+} */
+/* .form-group {
+    font-weight: bold;
+    
+} */
+h1.proposal {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p.proposaldesc{
+    letter-spacing: -.021em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    min-width: 320px
+}

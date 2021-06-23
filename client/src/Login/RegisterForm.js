@@ -281,15 +281,15 @@ export default class RegisterForm extends Component {
               />
             </div>
             <div className="form-group  registerform-group row">
-              <label className="registerform-label col" htmlFor="Occupation">Occupation</label>
+              <label className="registerform-label col" htmlFor="Occupation">Register as:</label>
               <select
                 className="form-control registerform-control"
                 id="userType"
                 value={this.state.userType}
                 onChange={this.handleUserTypeChange}
               >
-                <option value="student">Student</option>
-                <option value="recruiter">Recruiter</option>
+                <option value="student">Agency</option>
+                <option value="recruiter">Client</option>
               </select>
             </div>
 

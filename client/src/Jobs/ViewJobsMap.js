@@ -160,7 +160,7 @@ export default class ViewJobsMap extends Component {
     return (
         <React.Fragment>
             <div className="container">
-              <h1>Active Jobs Map</h1><br />
+              <h1>Active Opportunities Map</h1><br />
                 {componentToRender}
             </div>
         </React.Fragment>

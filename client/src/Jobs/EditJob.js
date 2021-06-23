@@ -97,17 +97,17 @@ export default class EditJob extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Edit Freelance Job posting</h1>
+                <h1></h1>
                 <h5 id="jobPostingMessage">{this.state.jobPostingMessage}</h5>
                 <form className="myForm">
                     <div className="form-group">
-                        <label htmlFor="CompanyName">Company Name</label>
+                        <label htmlFor="CompanyName">Client</label>
                         <input type="text" disabled className="form-control" id="companyName" value={this.props.currJob.companyName} />
 
-                        <label htmlFor="CompanyName">Job Title</label>
+                        <label htmlFor="CompanyName">Agency Expertise</label>
                         <input type="text" disabled className="form-control" id="jobTitle" value={this.state.jobTitle} />
 
-                        <label htmlFor="JobDesc">Job Description</label>
+                        <label htmlFor="JobDesc">Description</label>
                         <textarea rows="10" cols="75" className="form-control" id="jobDesc" value={this.state.jobDesc} onChange={this.handleJobDesc} />
 
                         <label htmlFor="Location">Street</label>
@@ -119,13 +119,13 @@ export default class EditJob extends Component {
                         <label htmlFor="Location">Postal Code</label>
                         <input type="text" className="form-control" name="postalCode" value={this.state.location.postalCode} onChange={this.handleLocation} />
 
-                        <label htmlFor="Salary">Salary per month</label>
-                        <input type="text" className="form-control" placeholder="$CAD" id="SALARY" value={this.state.salary} onChange={this.handleSalary} />
+                        <label htmlFor="Salary">Budget per month</label>
+                        <input type="text" className="form-control" placeholder="$USD" id="SALARY" value={this.state.salary} onChange={this.handleSalary} />
 
                         <label htmlFor="Salary">Deadline</label>
                         <input type="date" className="form-control" id="deadline" value={this.state.deadline} onChange={this.handleDeadline} />
                     </div>
-                    <button type="button" className="btn btn-primary" onClick={this.handleJobCreation}>Edit Job</button>
+                    <button type="button" className="btn btn-primary" onClick={this.handleJobCreation}>Edit Posting</button>
                     <br/>
                     <br/>
                 </form>

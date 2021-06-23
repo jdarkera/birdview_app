@@ -49,7 +49,7 @@ export default class ViewJobs extends Component {
       console.log(item);
       return (new Date(item["deadline"]).getTime() > new Date().getTime() &&
         <tr key={index} onClick={() => this.props.onSelectJob(item)}>
-          <td>
+          <td className="agency">
             { item["jobTitle"] }
           </td>
           <td>
@@ -94,7 +94,7 @@ export default class ViewJobs extends Component {
     const output = filteredJobs.map((item,index) => {
       return (new Date(item["deadline"]).getTime() > new Date().getTime() &&
         <tr key={index} onClick={() => this.props.onSelectJob(item)}>
-          <td>
+          <td className="agency">
             { item["jobTitle"] }
           </td>
           <td>
@@ -135,7 +135,7 @@ export default class ViewJobs extends Component {
     const output = currjobs.map((item,index) => {
       return (new Date(item["deadline"]).getTime() > new Date().getTime() &&
         <tr key={index} onClick={() => this.props.onSelectJob(item)}>
-          <td>
+          <td className="agency">
             { item["jobTitle"] }
           </td>
           <td>
@@ -161,21 +161,21 @@ export default class ViewJobs extends Component {
     if(Array.isArray(this.state.jobs) && this.state.jobs.length === 0) {
       return (
         <div className="container">
-          <h1>Active Jobs</h1><br />
-          {this.props.companyName && <p>You have not posted any freelance jobs yet!</p>}
+          <h1>Active Opportunities</h1><br />
+          {this.props.companyName && <p>You have not posted any opportunities yet!</p>}
           {! this.props.companyName && <p>No active listings to show. Try again later!</p>}
         </div>
       );
-    }0--
+    }
     return (
       <div className="container">
-      <h1>Active Jobs</h1>
+      <h1>Active Opportunities</h1>
       <br/>
       <br/>
      <table className="table customStyle">
       <thead>
         <tr>
-          <th>Job Title</th>
+          <th>Agency Expertise</th>
           {! this.props.companyName &&
           <th>
           <select className="custom-select mr-sm-2" onChange={this.applyCompanyFilter}>
@@ -189,8 +189,8 @@ export default class ViewJobs extends Component {
           </th>
           }
           {this.props.companyName &&
-          <th>Company</th>
-          }
+          <th>Client</th>
+          } 
           <th>Created At</th>
           <th>
           <select className="custom-select mr-sm-2" onChange={this.changeDeadline}>

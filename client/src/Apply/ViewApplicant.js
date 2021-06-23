@@ -186,7 +186,7 @@ export default class ViewApplicant extends Component {
               {! this.props.jobTitle &&
               <th>
               <select className="custom-select mr-sm-2" onChange={this.applyJobFilter}>
-                <option name="job" value="all" defaultValue>All Freelance Jobs</option>
+                <option name="job" value="all" defaultValue>All Opportunties</option>
                 {
                   this.state.jobs.map((job, i) => {
                     return <option name="job" value={job} key={i}>{job}</option>
@@ -196,16 +196,16 @@ export default class ViewApplicant extends Component {
               </th>
               }
               {this.props.jobTitle &&
-              <th>Job Title</th>
+              <th>Opportunity</th>
               }
-              <th>Company Name</th>
+              <th>Client</th>
               <th>
               <select className="custom-select mr-sm-2" onChange={this.sortCreatedTime}>
                 <option name="created-order" value="0" defaultValue>Applied Time (earliest)</option>
                 <option name="created-order" value="1" >Applied Time (latest)</option>
               </select>
               </th>
-              <th>Resume</th>
+              <th>Proposal</th>
             </tr>
           </thead>
           <tbody>

@@ -52,10 +52,10 @@ export default class ViewApplications extends Component {
       <table className="table">
       <tbody>
         <tr>
-          <th>Company name</th>
+          <th>Client</th>
           <th>Date</th>
           <th>Status</th>
-          <th>Resume</th>
+          <th>Proposal</th>
         </tr>
         { this.printRows() }
       </tbody>

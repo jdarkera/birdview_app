@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import './Apply.css';
 export default class Apply extends Component {
 
     constructor(props) {
@@ -55,22 +55,27 @@ export default class Apply extends Component {
         const companyName = this.props.currJob.companyName;
 
         return (
-            <div className="container">
+            <div className="container" >
+      
                 <h5 id="message">{this.state.message}</h5>
                 <div className="row">
                     <form onSubmit={this.onSubmit}>
-                        <div className="form-group">
-                        <button id="back-to-job" className="btn btn-primary" onClick={() => this.goBack()}>Back to Freelance Job posting</button>
+                        <div className="form-group" >
+                        <h1 class="proposal" >Submit Your Proposal:</h1>
+                        <p class="proposaldesc"> It will help the client understand which teams most closely match the skills required for the scope of work. Share your proposal in a PDF format.</p>
+                        <button id="back-to-job" className="btn btn-light" onClick={() => this.goBack()}>Back to Listing</button>
                         </div>
-                        <div className="form-group">User Name: {userName}</div>
-                        <div className="form-group">Job Title: {jobTitle}</div>
-                        <div className="form-group">Company Name: {companyName}</div>
+                        <div className="application">
+                        <div className="userinfo" className="form-group">User Name: {userName}</div>
+                        <div className="userinfo"  className="form-group">Opportunity: {jobTitle}</div>
+                        <div className="userinfo" className="form-group">Client: {companyName}</div>
                         <div className="form-group">
-                            <input type="file" onChange={this.onFileChange} />
-                            <p>Please upload resume or proposal in pdf file</p>
+                            <input type="file" className="upload" onChange={this.onFileChange} />
+                      
                         </div>
-                        <div className="form-group">
-                            <button className="btn btn-primary" type="submit">Upload</button>
+                        <div   className="form-group">
+                            <button  className="upload" className="btn btn-primary" type="submit">Upload</button>
+                        </div>
                         </div>
                     </form>
                 </div>

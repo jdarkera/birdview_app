@@ -103,35 +103,35 @@ export default class CreateJob extends Component {
     render() {
         return (
             <div className="container">
-                <h1>Add Job posting</h1>
+                <h1>Post to hire the right team:</h1>
                 <h5 id="jobPostingMessage">{this.state.jobPostingMessage}</h5>
                 <form className="myForm">
                     <div className="form-group">
-                        <label htmlFor="CompanyName">Company Name</label>
+                        <label htmlFor="CompanyName">Client <span class="required">*</span></label>
                         <input type="text" disabled className="form-control" id="companyName" value={this.props.companyName} />
 
-                        <label htmlFor="CompanyName">Job Title</label>
-                        <input type="text" className="form-control" id="jobTitle" value={this.state.jobTitle} onChange={this.handleJobTitle} />
+                        <label htmlFor="CompanyName">Agency Expertise <span class="required">*</span></label>
+                        <input type="text" className="form-control" placeholder="e.g digital marketing" id="jobTitle" value={this.state.jobTitle} onChange={this.handleJobTitle} />
 
-                        <label htmlFor="JobDesc">Job Description</label>
-                        <textarea rows="10" cols="75" className="form-control" id="jobDesc" value={this.state.jobDesc} onChange={this.handleJobDesc} />
+                        <label htmlFor="JobDesc">Description of Contract Work: <span class="required">*</span></label>
+                        <textarea rows="10" cols="75" className="form-control" id="jobDesc" placeholder="Please add a description of the scope of work, requirements, and timeline of your project" value={this.state.jobDesc} onChange={this.handleJobDesc} />
 
-                        <label htmlFor="Location">Street</label>
+                        <label htmlFor="Location">City <span class="required">*</span></label>
                         <input type="text" className="form-control" name="address" value={this.state.location.address} onChange={this.handleLocation} />
-                        <label htmlFor="Location">City</label>
+                        <label htmlFor="Location">State (if applicable)</label>
                         <input type="text" className="form-control" name="city" value={this.state.location.city} onChange={this.handleLocation} />
-                        <label htmlFor="Location">Province</label>
+                        <label htmlFor="Location">Country <span class="required">*</span></label>
                         <input type="text" className="form-control" name="province" value={this.state.location.province} onChange={this.handleLocation} />
-                        <label htmlFor="Location">Postal Code</label>
+                        <label htmlFor="Location">Zip Code</label>
                         <input type="text" className="form-control" name="postalCode" value={this.state.location.postalCode} onChange={this.handleLocation} />
 
-                        <label htmlFor="Salary">Salary per month</label>
-                        <input type="text" className="form-control" placeholder="$CAD" id="SALARY" value={this.state.salary} onChange={this.handleSalary} />
+                        <label htmlFor="Salary">Budget <span class="required">*</span></label>
+                        <input type="text" className="form-control" placeholder="$USD" id="SALARY" value={this.state.salary} onChange={this.handleSalary} />
 
                         <label htmlFor="Salary">Deadline</label>
                         <input type="date" className="form-control" id="deadline" value={this.state.deadline} onChange={this.handleDeadline} />
                     </div>
-                    <button type="button" className="btn btn-primary" onClick={this.handleJobCreation}>Publish Job</button>
+                    <button type="button" className="btn btn-primary" onClick={this.handleJobCreation}>Publish Opportunity</button>
                     <br/>
                     <br/>
                 </form>

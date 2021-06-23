@@ -51,11 +51,11 @@ export default class Student extends Component {
                         <button className="nav-link userNav edit bg-warning" onClick={() => this.handleTabChange(Tabs.USER_PROFILE)}>Edit Profile</button>
                     </li>
                     <li className="nav-item">
-                        <button className="nav-link userNav bg-warning " onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Jobs</button>
+                        <button className="nav-link userNav bg-warning " onClick={() => this.handleTabChange(Tabs.VIEW_JOBS)}>View Opportunities</button>
                     </li>
 
                     <li className="nav-item">
-                        <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS_MAP)}>View Jobs Map</button>
+                        <button className="nav-link userNav bg-warning" onClick={() => this.handleTabChange(Tabs.VIEW_JOBS_MAP)}>View Listings Map</button>
                     </li>
 
                     <li className="nav-item">

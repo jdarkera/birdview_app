@@ -203,15 +203,15 @@ export default class Job extends Component {
                     {! this.state.deleted && <table className="table table-borderless">
                         <tbody>
                             <tr>
-                                <th>Job Title</th>
+                                <th>Agency Expertise</th>
                                 <td>{jobTitle}</td>
-                                <th>Salary</th>
+                                <th>Budget</th>
                                 <td>{salary}</td>
                             </tr>
                             <tr>
                                 <th>Deadline</th>
                                 <td>{deadline}</td>
-                                <th>Company Name</th>
+                                <th>Client</th>
                                 <td>{companyName}</td>
                             </tr>
                             <tr>
@@ -226,7 +226,7 @@ export default class Job extends Component {
                     {this.props.userType === UserType.STUDENT && ! this.state.deleted && <button class="btn btn-secondary" onClick={() => {this.checkApplyDup();this.reRender()}}>Applied</button>}
                     <br/>
                     <br/>
-                    {! this.state.deleted && <h4>Job Description</h4>}<br/>
+                    {! this.state.deleted && <h4>Description</h4>}<br/>
                     {! this.state.deleted && <p>{jobDesc}</p>}
                     <hr/>
 
@@ -249,9 +249,9 @@ export default class Job extends Component {
                     {! this.state.deleted && <table className="table table-borderless">
                         <tbody>
                             <tr>
-                                <th>Job Title</th>
+                                <th>Agency Expertise</th>
                                 <td>{jobTitle}</td>
-                                <th>Salary</th>
+                                <th>Budget</th>
                                 <td>{salary}</td>
                             </tr>
                             <tr>
@@ -270,11 +270,11 @@ export default class Job extends Component {
                     <hr/>
                     {this.props.userType === UserType.STUDENT && ! this.state.deleted && <button class="btn btn-primary" onClick={() => this.setState({viewCompanyInfo:true})}>View Company Info</button>}
                     {this.props.userType === UserType.STUDENT && ! this.state.deleted && <button class="btn btn-primary" onClick={() => {this.checkApplyDup();this.reRender()}}>Apply</button>}
-                    {this.props.userType === UserType.RECRUITER && ! this.state.deleted && <button class="btn btn-primary" onClick={() => this.setState({editJob: true})}>Edit Job</button>}
+                    {this.props.userType === UserType.RECRUITER && ! this.state.deleted && <button class="btn btn-primary" onClick={() => this.setState({editJob: true})}>Edit Posting</button>}
                     {this.props.userType === UserType.RECRUITER && ! this.state.deleted && <button class="btn btn-danger" onClick={() => this.deleteJob()}>Delete</button>}
                     <br/>
                     <br/>
-                    {! this.state.deleted && <h4>Job Description</h4>}<br/>
+                    {! this.state.deleted && <h4>Description</h4>}<br/>
                     {! this.state.deleted && <p>{jobDesc}</p>}
                     <hr/>
 
