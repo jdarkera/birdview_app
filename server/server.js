@@ -10,8 +10,10 @@ require('./app/models/review.model.js');
 require('./app/models/user.model.js');
 
 // Configuring the database
-require('dotenv').config();
-const mongoose = require('mongoose');
+
+// require('dotenv').config();
+// const mongoose = require('mongoose');
+const uri = process.env.MONGODB_URI;
 
 
 // Connecting to the database
